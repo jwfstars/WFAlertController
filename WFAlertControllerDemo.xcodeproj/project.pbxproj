@@ -13,6 +13,7 @@
 		9A88BA2E1E5C5CE100EC00A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A88BA2C1E5C5CE100EC00A6 /* Main.storyboard */; };
 		9A88BA301E5C5CE100EC00A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A88BA2F1E5C5CE100EC00A6 /* Assets.xcassets */; };
 		9A88BA331E5C5CE100EC00A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A88BA311E5C5CE100EC00A6 /* LaunchScreen.storyboard */; };
+		9A88BA3D1E5C5EEE00EC00A6 /* WFAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A88BA3C1E5C5EEE00EC00A6 /* WFAlertController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		9A88BA2F1E5C5CE100EC00A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A88BA321E5C5CE100EC00A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A88BA341E5C5CE100EC00A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A88BA3B1E5C5EEE00EC00A6 /* WFAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFAlertController.h; sourceTree = "<group>"; };
+		9A88BA3C1E5C5EEE00EC00A6 /* WFAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFAlertController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 		9A88BA171E5C5CE100EC00A6 = {
 			isa = PBXGroup;
 			children = (
+				9A88BA3A1E5C5ED100EC00A6 /* WFAlertController */,
 				9A88BA221E5C5CE100EC00A6 /* WFAlertControllerDemo */,
 				9A88BA211E5C5CE100EC00A6 /* Products */,
 			);
@@ -78,6 +82,15 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		9A88BA3A1E5C5ED100EC00A6 /* WFAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				9A88BA3B1E5C5EEE00EC00A6 /* WFAlertController.h */,
+				9A88BA3C1E5C5EEE00EC00A6 /* WFAlertController.m */,
+			);
+			path = WFAlertController;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -154,6 +167,7 @@
 				9A88BA2B1E5C5CE100EC00A6 /* ViewController.m in Sources */,
 				9A88BA281E5C5CE100EC00A6 /* AppDelegate.m in Sources */,
 				9A88BA251E5C5CE100EC00A6 /* main.m in Sources */,
+				9A88BA3D1E5C5EEE00EC00A6 /* WFAlertController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
