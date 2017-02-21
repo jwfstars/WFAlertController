@@ -73,7 +73,7 @@
 
 - (void)wf_safePresentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion
 {
-    UIViewController *presentedController = [[UIApplication sharedApplication].keyWindow.rootViewController lastPresentedViewController];
+    UIViewController *presentedController = [[UIApplication sharedApplication].keyWindow.rootViewController wf_lastPresentedViewController];
     if (presentedController) {
         [presentedController presentViewController:viewControllerToPresent animated:YES completion:completion];
     }else {
@@ -81,12 +81,12 @@
     }
 }
 
-- (UIViewController *)lastPresentedViewController
+- (UIViewController *)wf_lastPresentedViewController
 {
     UIViewController *presentedViewController = self.presentedViewController;
     if (presentedViewController) {
         if (presentedViewController.presentedViewController) {
-            return [presentedViewController lastPresentedViewController];
+            return [presentedViewController wf_lastPresentedViewController];
         }else {
             return presentedViewController;
         }
