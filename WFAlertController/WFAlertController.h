@@ -16,7 +16,7 @@ typedef void(^WFAlertOtherActionsHandler)(NSInteger index);
 @interface WFAlertController : NSObject
 + (void)alertViewWithTitle:(NSString *)title message:(NSString *)message;
 
-+ (void)alertViewWithTitle:(NSString *)title message:(NSString *) message cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSArray *) otherButtons onDismiss:(WFAlertOtherActionsHandler) dismissed onCancel:(WFAlertActionHandler) cancelled;
++ (void)alertViewWithTitle:(NSString *)title message:(NSString *) message cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSArray *) otherButtons onDismiss:(WFAlertOtherActionsHandler) dismissed onCancel:(dispatch_block_t) cancelled;
 
 + (void)alertWithTitle:(NSString *)title message:(NSString *)message destructiveTitle:(NSString *)desTitle destructiveAction:(WFAlertActionHandler)desAction cancelTitle:(NSString *)cancelTitle cancelAction:(WFAlertActionHandler)cancelAction otherTitles:(NSArray *)otherTitles handler:(WFAlertOtherActionsHandler)handler;
 
