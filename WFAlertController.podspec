@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = 'WFAlertController'
   s.summary      = 'A block based UIAlertController'
-  s.version      = '0.0.3'
+  s.version      = '0.0.4'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.authors      =  {'Jiang Wenfan' => 'jwfstars@163.com' }
   s.homepage     = 'https://github.com/jwfstars/WFAlertController'
