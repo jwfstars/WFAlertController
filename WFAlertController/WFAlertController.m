@@ -17,11 +17,11 @@
     } otherTitles:nil handler:nil];
 }
 
-+ (void)alertViewWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSArray *)otherButtons onDismiss:(WFAlertOtherActionsHandler)dismissed onCancel:(WFAlertActionHandler)cancelled
++ (void)alertViewWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSArray *)otherButtons onDismiss:(WFAlertOtherActionsHandler)dismissed onCancel:(dispatch_block_t)cancelled
 {
     [self alertWithTitle:title message:message destructiveTitle:nil destructiveAction:nil cancelTitle:cancelButtonTitle cancelAction:^(UIAlertAction *action) {
         if (cancelled) {
-            cancelled(action);
+            cancelled();
         }
     } otherTitles:otherButtons handler:^(NSInteger index) {
         if (dismissed) {
